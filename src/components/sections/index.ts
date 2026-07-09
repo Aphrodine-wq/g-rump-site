@@ -1,0 +1,12 @@
+export { HeroSection } from "./HeroSection";
+export { LogoCloudSection } from "./LogoCloudSection";
+export { NumbersSection } from "./NumbersSection";
+export { HowItWorksSection } from "./HowItWorksSection";
+export { FeaturesTeaserSection } from "./FeaturesTeaserSection";
+export { AgentModesSection } from "./AgentModesSection";
+export { ComparisonSection } from "./ComparisonSection";
+export { TestimonialsSection } from "./TestimonialsSection";
+export { TrustStripSection } from "./TrustStripSection";
+export { KeyboardShortcutsSection } from "./KeyboardShortcutsSection";
+export { NewsletterSection } from "./NewsletterSection";
+export { CTASection } from "./CTASection";
