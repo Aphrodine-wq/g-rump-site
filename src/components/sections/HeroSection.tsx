@@ -38,7 +38,7 @@ export function HeroSection() {
                     <Reveal delay={60}>
                         {/* Bleeds past the container edge on large screens. */}
                         <div className="lg:w-[120%]">
-                            <AppWindowMock />
+                            <AppWindowMock screenshotSrc="/product/hero-ide.png" />
                         </div>
                     </Reveal>
                 </div>

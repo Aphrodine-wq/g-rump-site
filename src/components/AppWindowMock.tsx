@@ -11,7 +11,7 @@ export function AppWindowMock({ screenshotSrc }: { screenshotSrc?: string }) {
         return (
             <Image
                 src={screenshotSrc}
-                alt="G-Rump working on its own repository"
+                alt="The G-Rump app on macOS — chat, agent modes, and the panel rail"
                 width={1600}
                 height={1000}
                 priority
