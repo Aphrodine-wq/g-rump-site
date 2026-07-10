@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import download from "@/data/download.json";
 import { FACTS, GITHUB_URL, LICENSE_URL } from "@/lib/facts";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -142,6 +143,7 @@ export default function RootLayout({
                     Skip to content
                 </a>
                 {children}
+                <Analytics />
             </body>
         </html>
     );
