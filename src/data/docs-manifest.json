@@ -1,0 +1,42 @@
+{
+    "groups": [
+        "Getting Started",
+        "The Harness",
+        "Personality & Skills",
+        "IDE",
+        "Integration",
+        "Security & Privacy",
+        "Data & Config",
+        "Appearance",
+        "Release"
+    ],
+    "pages": [
+        { "slug": "quick-start", "title": "Quick Start", "group": "Getting Started", "owned": "site" },
+        { "slug": "requirements", "title": "Requirements", "group": "Getting Started", "owned": "site" },
+        { "slug": "onboarding", "title": "Onboarding", "group": "Getting Started", "owned": "app", "source": "docs/release/onboarding.md" },
+        { "slug": "architecture", "title": "Architecture", "group": "The Harness", "owned": "app", "source": "docs/core/architecture.md" },
+        { "slug": "agent-modes", "title": "Agent Modes", "group": "The Harness", "owned": "app", "source": "docs/ai-agent/agent-modes.md" },
+        { "slug": "tools", "title": "Tools", "group": "The Harness", "owned": "app", "source": "docs/ai-agent/tools.md" },
+        { "slug": "providers", "title": "AI Providers", "group": "The Harness", "owned": "app", "source": "docs/ai-agent/ai-providers.md" },
+        { "slug": "learning-loop", "title": "Learning Loop", "group": "The Harness", "owned": "app", "source": "docs/learning-loop-demo.md" },
+        { "slug": "evals", "title": "Evals", "group": "The Harness", "owned": "app", "source": "docs/EVALS.md" },
+        { "slug": "skills", "title": "Skills", "group": "Personality & Skills", "owned": "app", "source": "docs/ai-agent/skills.md" },
+        { "slug": "soul", "title": "Soul", "group": "Personality & Skills", "owned": "app", "source": "docs/ai-agent/soul.md" },
+        { "slug": "panels", "title": "Panels", "group": "IDE", "owned": "app", "source": "docs/ide/panels.md" },
+        { "slug": "layout", "title": "Layout", "group": "IDE", "owned": "app", "source": "docs/ide/layout.md" },
+        { "slug": "shortcuts", "title": "Keyboard Shortcuts", "group": "IDE", "owned": "app", "source": "docs/ide/keyboard-shortcuts.md" },
+        { "slug": "lsp", "title": "LSP", "group": "IDE", "owned": "app", "source": "docs/ide/lsp.md" },
+        { "slug": "mcp", "title": "MCP", "group": "Integration", "owned": "app", "source": "docs/integration/mcp.md" },
+        { "slug": "notifications", "title": "Notifications", "group": "Integration", "owned": "app", "source": "docs/integration/notifications.md" },
+        { "slug": "security", "title": "Security", "group": "Security & Privacy", "owned": "app", "source": "docs/security/security.md" },
+        { "slug": "privacy", "title": "Privacy", "group": "Security & Privacy", "owned": "app", "source": "docs/security/privacy.md" },
+        { "slug": "project-config", "title": "Project Config", "group": "Data & Config", "owned": "app", "source": "docs/data-config/project-config.md" },
+        { "slug": "settings", "title": "Settings", "group": "Data & Config", "owned": "app", "source": "docs/core/settings.md" },
+        { "slug": "data-persistence", "title": "Data Persistence", "group": "Data & Config", "owned": "app", "source": "docs/data-config/data-persistence.md" },
+        { "slug": "themes", "title": "Themes", "group": "Appearance", "owned": "app", "source": "docs/core/themes.md" },
+        { "slug": "design-tokens", "title": "Design Tokens", "group": "Appearance", "owned": "app", "source": "docs/core/design-tokens.md" },
+        { "slug": "distribution", "title": "Distribution", "group": "Release", "owned": "app", "source": "docs/release/distribution.md" },
+        { "slug": "testing", "title": "Testing", "group": "Release", "owned": "app", "source": "docs/release/testing.md" },
+        { "slug": "accessibility", "title": "Accessibility", "group": "Release", "owned": "app", "source": "docs/release/accessibility.md" }
+    ]
+}

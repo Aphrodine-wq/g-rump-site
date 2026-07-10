@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { DOCS_PAGES } from "@/lib/docs-manifest";
 
 const SITE_URL = "https://www.g-rump.com";
 
@@ -7,47 +8,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const marketingPages = [
         { path: "", priority: 1.0, changeFrequency: "weekly" as const },
+        { path: "/download", priority: 0.9, changeFrequency: "monthly" as const },
         { path: "/features", priority: 0.9, changeFrequency: "monthly" as const },
-        { path: "/pricing", priority: 0.9, changeFrequency: "monthly" as const },
-        { path: "/about", priority: 0.7, changeFrequency: "monthly" as const },
-        { path: "/blog", priority: 0.8, changeFrequency: "weekly" as const },
+        { path: "/what-is-an-ai-harness", priority: 0.8, changeFrequency: "monthly" as const },
         { path: "/changelog", priority: 0.7, changeFrequency: "weekly" as const },
-        { path: "/contact", priority: 0.6, changeFrequency: "yearly" as const },
         { path: "/security", priority: 0.7, changeFrequency: "monthly" as const },
-        { path: "/releases", priority: 0.8, changeFrequency: "weekly" as const },
-        { path: "/billing/success", priority: 0.3, changeFrequency: "yearly" as const },
-        { path: "/billing/cancel", priority: 0.3, changeFrequency: "yearly" as const },
-    ];
-
-    const blogSlugs = [
-        "introducing-grump-2",
-        "why-native-macos-matters",
-        "mastering-agent-modes",
-    ];
-
-    const docsSlugs = [
-        "",
-        "/quick-start",
-        "/requirements",
-        "/providers",
-        "/tools",
-        "/panels",
-        "/agent-modes",
-        "/lsp",
-        "/skills",
-        "/soul",
-        "/custom-skills",
-        "/mcp",
-        "/project-config",
-        "/workflow-presets",
-        "/exec-approvals",
-        "/keychain",
-        "/permissions",
-        "/themes",
-        "/layout",
-        "/shortcuts",
-        "/building",
-        "/packaging",
+        { path: "/about", priority: 0.5, changeFrequency: "yearly" as const },
+        { path: "/privacy", priority: 0.3, changeFrequency: "yearly" as const },
+        { path: "/terms", priority: 0.3, changeFrequency: "yearly" as const },
     ];
 
     return [
@@ -57,17 +25,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: page.changeFrequency,
             priority: page.priority,
         })),
-        ...blogSlugs.map((slug) => ({
-            url: `${SITE_URL}/blog/${slug}`,
+        {
+            url: `${SITE_URL}/docs`,
+            lastModified: now,
+            changeFrequency: "weekly" as const,
+            priority: 0.8,
+        },
+        ...DOCS_PAGES.map((page) => ({
+            url: `${SITE_URL}/docs/${page.slug}`,
             lastModified: now,
             changeFrequency: "monthly" as const,
             priority: 0.6,
-        })),
-        ...docsSlugs.map((slug) => ({
-            url: `${SITE_URL}/docs${slug}`,
-            lastModified: now,
-            changeFrequency: "monthly" as const,
-            priority: 0.5,
         })),
     ];
 }

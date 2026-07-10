@@ -1,11 +1,11 @@
 {
-    "name": "G-Rump — Native macOS AI Coding Agent",
+    "name": "G-Rump",
     "short_name": "G-Rump",
-    "description": "Native macOS AI coding agent with 100+ tools, multi-provider AI, and deep system integration.",
+    "description": "The open-source AI harness for macOS.",
     "start_url": "/",
-    "display": "standalone",
-    "background_color": "#000000",
-    "theme_color": "#007aff",
+    "display": "browser",
+    "background_color": "#fbfbfd",
+    "theme_color": "#fbfbfd",
     "icons": [
         {
             "src": "/icon-192.png",
