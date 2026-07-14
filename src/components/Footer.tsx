@@ -81,7 +81,18 @@ export function Footer() {
                     ))}
                 </div>
                 <div className="mt-16 flex flex-col gap-4 border-t border-[var(--hairline-soft)] pt-8 text-sm text-[var(--text-3)] sm:flex-row sm:items-center sm:justify-between">
-                    <p>&copy; 2026 James Walton. MIT licensed.</p>
+                    <p>
+                        &copy; 2026 James Walton. MIT licensed. Built by{" "}
+                        <a
+                            href="https://waltbuilds.com"
+                            target="_blank"
+                            rel="noopener"
+                            className="transition-colors duration-150 hover:text-[var(--text-1)]"
+                        >
+                            Walt Builds
+                        </a>
+                        .
+                    </p>
                     <div className="flex gap-6">
                         <Link href="/privacy" className="transition-colors duration-150 hover:text-[var(--text-1)]">
                             Privacy
