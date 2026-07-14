@@ -21,7 +21,7 @@ const SITE_URL = "https://www.g-rump.com";
 const SITE_NAME = "G-Rump";
 const SITE_TITLE = "G-Rump — The Open-Source AI Harness for macOS";
 const SITE_DESCRIPTION =
-    "G-Rump is a free, open-source AI harness for macOS: a 200-step agent loop, 153 tools, a learning loop that improves with use, and bring-your-own-key across four providers. Native Swift, no Electron, MIT licensed.";
+    "G-Rump is a free, open-source AI harness for macOS: a 200-step agent loop, 160 tools, an experimental learning loop, and bring-your-own-key across five providers including local Ollama. Native Swift, no Electron, MIT licensed. Early software, honest about it.";
 
 export const viewport: Viewport = {
     themeColor: "#fbfbfd",
@@ -100,9 +100,9 @@ const softwareJsonLd = {
     featureList: [
         `${FACTS.tools} native tools`,
         `${FACTS.agentModes} agent modes (Plan, Build, Spec)`,
-        "Bring-your-own-key: Anthropic, OpenAI, Google, OpenRouter",
-        "Recursive learning loop with approval-gated skill proposals",
-        `${FACTS.panels} IDE panels with build-and-run to simulator`,
+        "Bring-your-own-key: Anthropic, OpenAI, Google, OpenRouter, local Ollama",
+        "Experimental learning loop with approval-gated skill proposals",
+        `${FACTS.panels} IDE panels including a build console and simulator runner`,
         `MCP client and server (${FACTS.mcpPresets} presets)`,
         "Three-tier cross-session memory",
         "macOS Keychain-only key storage",

@@ -1,0 +1,27 @@
+# G-Rump
+
+> G-Rump is a free, MIT-licensed, open-source AI harness for macOS: the agent loop, 160 native tools, memory, and safety gates a language model needs to do coding work on a Mac — shipped as a native Swift app (no Electron, ~13 MB). Bring your own API key (Anthropic, OpenAI, Google, OpenRouter) or run local models through Ollama with no key. It is early software with rough edges, and says so plainly: the tool system, provider layer, MCP integration, and security model are solid; chat polish, agentic-task reliability, build-and-run to simulator, and the experimental self-learning loop are still being ironed out.
+
+Key facts: 200-step agent loop (configurable 5–1,000) · 160 native tools · 3 agent modes (Plan, Build, Spec) · 5 providers incl. local Ollama · 20 IDE dock panels · MCP client AND server (67 presets; serves its own tools on TCP 18790) · 73 bundled skills · three-tier cross-session memory · exec approvals + fail-closed Conscience gate · keys in the macOS Keychain only · no accounts, no telemetry, no backend · ~67K lines of Swift, 1,500+ tests.
+
+## Docs
+
+- [What is an AI harness?](https://www.g-rump.com/what-is-an-ai-harness): concept explainer — loop, tools, gates, memory, MCP
+- [Quick start](https://www.g-rump.com/docs/quick-start): download → API key (or Ollama) → first run
+- [Features](https://www.g-rump.com/features): every claim, counted from the code
+- [Roadmap & status](https://www.g-rump.com/roadmap): what works today, what's rough, what's next — stated honestly
+- [Security model](https://www.g-rump.com/security): exec approvals, Conscience gate, daemon constraints
+- [All documentation](https://www.g-rump.com/docs): 27 pages synced from the source repo
+
+## Download & source
+
+- [Download for macOS](https://www.g-rump.com/download): free, macOS 14+, SHA-256 published; current builds are ad-hoc signed (Gatekeeper instructions on the page)
+- [GitHub repository](https://github.com/Aphrodine-wq/G-Rump): MIT, contributions welcome, good-first-issues labeled
+- [Contribute](https://www.g-rump.com/contribute): build setup and where help lands well
+- [Changelog](https://www.g-rump.com/changelog): release history
+
+## Comparisons
+
+- [G-Rump vs Claude Code](https://www.g-rump.com/vs/claude-code)
+- [G-Rump vs Aider](https://www.g-rump.com/vs/aider)
+- [G-Rump vs OpenHands](https://www.g-rump.com/vs/openhands)

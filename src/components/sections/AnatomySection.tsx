@@ -15,14 +15,14 @@ const CARDS: Card[] = [
     {
         stat: `${FACTS.agentLoopMaxTurns}-step loop`,
         title: "The agent loop",
-        body: "Multi-turn streaming tool use with parallel execution and retries with backoff. 200 steps by default, configurable from 5 to 1,000 — enough rope to finish real work, gated so it can't hang itself.",
+        body: "Multi-turn streaming tool use with parallel execution and retries with backoff. 200 steps by default, configurable from 5 to 1,000 — enough rope to take on real work, gated so it can't hang itself.",
         href: "/docs/architecture",
         large: true,
     },
     {
         stat: "act → apply",
-        title: "It gets better the more you use it",
-        body: "Every run feeds an outcome ledger. A reflection pass distills lessons that ride along on future prompts, and strong lesson clusters become skill proposals — diffs you approve, never silent edits.",
+        title: "Built to learn from its runs — experimental",
+        body: "Every run feeds an outcome ledger. A reflection pass distills lessons that ride along on future prompts, and strong lesson clusters become skill proposals — diffs you approve, never silent edits. New in 2.1; treat it as a lab, not a guarantee.",
         href: "/docs/learning-loop",
         large: true,
     },
@@ -41,7 +41,7 @@ const CARDS: Card[] = [
     {
         stat: `${FACTS.providers} providers`,
         title: "Your keys, direct",
-        body: "Anthropic default, OpenAI, Google, OpenRouter. Keychain only.",
+        body: "Anthropic default, OpenAI, Google, OpenRouter — or local Ollama, no key. Keychain only.",
         href: "/docs/providers",
     },
     {

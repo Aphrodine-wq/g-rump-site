@@ -34,9 +34,9 @@ Point G-Rump at any folder — a Swift package, an Xcode project, or a plain rep
 
 ## 4. Run your first task
 
-Pick an [agent mode](/docs/agent-modes) — **Plan** to think first, **Build** to make changes, **Spec** to write one — and describe what you want. The agent works through its [153 tools](/docs/tools) with streaming output, and every shell command passes through [exec approvals](/docs/security) before it runs.
+Pick an [agent mode](/docs/agent-modes) — **Plan** to think first, **Build** to make changes, **Spec** to write one — and describe what you want. The agent works through its [160 tools](/docs/tools) with streaming output, and every shell command passes through [exec approvals](/docs/security) before it runs.
 
-As you correct it and it succeeds or fails, the [learning loop](/docs/learning-loop) distills lessons that ride along on future runs. Skill changes it wants to make are proposed as diffs you approve in the Learning panel — never applied silently.
+As you correct it and it succeeds or fails, the experimental [learning loop](/docs/learning-loop) distills lessons that ride along on future runs. Skill changes it wants to make are proposed as diffs you approve in the Learning panel — never applied silently.
 
 ## Build from source
 

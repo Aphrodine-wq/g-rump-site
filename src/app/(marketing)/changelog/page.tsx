@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     title: "Changelog",
     description:
         "Every G-Rump release, synced straight from the repository's CHANGELOG.md.",
+    alternates: { canonical: "/changelog" },
 };
 
 export default async function ChangelogPage() {

@@ -7,6 +7,7 @@ const COLUMNS = [
         title: "Product",
         links: [
             { href: "/features", label: "Features" },
+            { href: "/roadmap", label: "Roadmap & status" },
             { href: "/download", label: "Download" },
             { href: "/changelog", label: "Changelog" },
             { href: "/security", label: "Security" },
@@ -25,6 +26,7 @@ const COLUMNS = [
         title: "Open source",
         links: [
             { href: GITHUB_URL, label: "GitHub", external: true },
+            { href: "/contribute", label: "Contribute" },
             { href: GITHUB_RELEASES_URL, label: "Releases", external: true },
             { href: LICENSE_URL, label: "MIT license", external: true },
             { href: "/what-is-an-ai-harness", label: "What is an AI harness?" },

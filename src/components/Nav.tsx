@@ -3,12 +3,15 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { track } from "@vercel/analytics";
 import { Wordmark } from "./Wordmark";
 import { GITHUB_URL } from "@/lib/facts";
+import github from "@/data/github.json";
 
 const LINKS = [
     { href: "/features", label: "Features" },
     { href: "/docs", label: "Docs" },
+    { href: "/roadmap", label: "Roadmap" },
     { href: "/download", label: "Download" },
     { href: "/changelog", label: "Changelog" },
 ];
@@ -45,9 +48,26 @@ export function Nav() {
                         href={GITHUB_URL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-[var(--text-2)] transition-colors duration-150 hover:text-[var(--text-1)]"
+                        className="flex items-center gap-1.5 text-sm text-[var(--text-2)] transition-colors duration-150 hover:text-[var(--text-1)]"
+                        onClick={() => track("github_click", { placement: "nav" })}
                     >
+                        <svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" className="shrink-0">
+                            <path
+                                d="M8 1.5l1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.3l-3.8 2 .7-4.3-3.1-3 4.3-.6L8 1.5z"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="1.2"
+                                strokeLinejoin="round"
+                            />
+                        </svg>
                         GitHub
+                        {github.stars > 0 && (
+                            <span className="font-mono text-xs text-[var(--text-3)]">
+                                {github.stars >= 1000
+                                    ? `${(github.stars / 1000).toFixed(1)}k`
+                                    : github.stars}
+                            </span>
+                        )}
                     </a>
                     <Link href="/download" className="btn-primary text-sm">
                         Download

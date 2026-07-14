@@ -7,14 +7,15 @@ import { FACTS, GITHUB_URL } from "@/lib/facts";
 export const metadata: Metadata = {
     title: "Features",
     description:
-        "Everything in the G-Rump harness: the 200-step agent loop, 153 tools, learning loop, 20-panel native IDE surface, MCP client and server, and a security model you can read.",
+        "Everything in the G-Rump harness: the 200-step agent loop, 160 tools, an experimental learning loop, 20-panel native IDE surface, MCP client and server, and a security model you can read.",
+    alternates: { canonical: "/features" },
 };
 
 const SECTIONS = [
     {
         eyebrow: "The loop",
         title: "An agent loop built for real work",
-        body: "Multi-turn streaming tool use with parallel execution and retries with backoff. 200 steps by default — configurable from 5 to 1,000 — so the agent can carry a task from plan to passing tests without hand-holding. Three modes swap the whole system strategy: Plan thinks first, Build changes code, Spec writes the document.",
+        body: "Multi-turn streaming tool use with parallel execution and retries with backoff. 200 steps by default — configurable from 5 to 1,000 — enough room for real multi-step work. Some tasks land clean, some need you in the loop; the harness is built so either way nothing happens behind your back. Three modes swap the whole system strategy: Plan thinks first, Build changes code, Spec writes the document.",
         points: [
             `${FACTS.tools} native tools — files, shell, git, HTTP, SQLite, OCR, Apple-native`,
             "Parallel tool execution with exponential backoff",
@@ -25,9 +26,9 @@ const SECTIONS = [
         linkLabel: "Agent modes",
     },
     {
-        eyebrow: "Learning",
-        title: "A harness that gets better the more you use it",
-        body: "Every run's outcome is recorded. A reflection pass distills lessons — short, imperative, confidence-scored — that ride along on future prompts. Strong lesson clusters become skill proposals: diffs you review and approve in the Learning panel. Corrections count against lessons; being wrong has a cost.",
+        eyebrow: "Learning · experimental",
+        title: "A harness built to get better the more you use it",
+        body: "Every run's outcome is recorded. A reflection pass distills lessons — short, imperative, confidence-scored — that ride along on future prompts. Strong lesson clusters become skill proposals: diffs you review and approve in the Learning panel. Corrections count against lessons; being wrong has a cost. The loop is new in 2.1 — the mechanics are all there and tested, the long-run payoff is still being proven.",
         points: [
             "Outcome ledger with two-stage success (corrections re-score runs)",
             "Lessons with Laplace confidence, idle decay, and auto-retire",
@@ -40,7 +41,7 @@ const SECTIONS = [
     {
         eyebrow: "Native",
         title: "A real Mac app with a real IDE surface",
-        body: `Pure Swift and SwiftUI — no Electron, about 13 MB on disk. ${FACTS.panels} dock panels cover build, git, terminal, simulator, tests, logs, and profiling, with a ⌘0 project navigator. ⌘R builds with xcodebuild or SPM and runs straight to a booted simulator with live app logs. SourceKit-LSP feeds real diagnostics into the agent's context.`,
+        body: `Pure Swift and SwiftUI — no Electron, about 13 MB on disk. ${FACTS.panels} dock panels cover build, git, terminal, simulator, tests, logs, and profiling, with a ⌘0 project navigator. ⌘R builds with xcodebuild or SPM and runs to a booted simulator with live app logs — new in 2.1 and environment-dependent, so expect rough edges. SourceKit-LSP feeds real diagnostics into the agent's context.`,
         points: [
             `${FACTS.panels} dock panels + ⌘0 navigator`,
             "⌘R build-and-run to simulator with live logs",

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: "About",
     description:
         "G-Rump is an open-source AI harness for macOS, built in Swift by James Walton. Why it exists, why it's grumpy, and how to get in touch.",
+    alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
@@ -20,7 +21,7 @@ export default function AboutPage() {
                 <p>
                     G-Rump started as a hackathon build and grew into a conviction: a
                     coding agent should be a first-class Mac citizen with a memory, not a
-                    process in a terminal. It&rsquo;s roughly 62,000 lines of Swift — the
+                    process in a terminal. It&rsquo;s roughly 67,000 lines of Swift — the
                     agent loop, tools, memory, learning loop, and safety gates that let a
                     language model do real work on a real machine.
                 </p>

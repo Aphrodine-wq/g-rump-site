@@ -5,6 +5,7 @@ export const metadata: Metadata = {
     title: "Privacy",
     description:
         "G-Rump's privacy policy is short because there's little to disclose: no accounts, no telemetry, no backend. Your keys stay in the Keychain and your code stays on your machine.",
+    alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AppWindowMock } from "@/components/AppWindowMock";
 import { Reveal } from "@/components/Reveal";
+import { TrackedLink } from "@/components/TrackedLink";
 import { GITHUB_URL } from "@/lib/facts";
 
 export function HeroSection() {
@@ -14,23 +15,26 @@ export function HeroSection() {
                             The open-source AI harness that lives on your Mac.
                         </h1>
                         <p className="mt-6 max-w-[46ch] text-lg leading-relaxed text-[var(--text-2)]">
-                            G-Rump is the agent loop, 153 tools, memory, and safety gates
-                            that let a model actually do work — shipped as a native Swift
-                            app that learns from every run. Bring your own key. It&rsquo;s
-                            free.
+                            G-Rump is the agent loop, 160 tools, memory, and safety gates
+                            a model needs to work on your machine — shipped as a native
+                            Swift app that&rsquo;s early, rough in places, and honest
+                            about which places. Bring your own key, or none with local
+                            Ollama. It&rsquo;s free.
                         </p>
                         <div className="mt-9 flex flex-wrap gap-4">
                             <Link href="/download" className="btn-primary">
                                 Download for macOS
                             </Link>
-                            <a
+                            <TrackedLink
                                 href={GITHUB_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-ghost"
+                                event="github_click"
+                                eventData={{ placement: "hero" }}
                             >
                                 View on GitHub
-                            </a>
+                            </TrackedLink>
                         </div>
                     </Reveal>
                 </div>

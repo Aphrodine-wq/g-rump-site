@@ -5,7 +5,8 @@ import { getDocsByGroup } from "@/lib/docs-manifest";
 export const metadata: Metadata = {
     title: { absolute: "Documentation — G-Rump" },
     description:
-        "Everything in the G-Rump open-source AI harness, documented: the agent loop, 153 tools, providers, learning loop, MCP, security model, and distribution.",
+        "Everything in the G-Rump open-source AI harness, documented: the agent loop, 160 tools, providers, learning loop, MCP, security model, and distribution.",
+    alternates: { canonical: "/docs" },
 };
 
 export default function DocsIndex() {

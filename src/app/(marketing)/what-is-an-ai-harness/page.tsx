@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     title: "What Is an AI Harness?",
     description:
         "An AI harness is the machinery between a language model and your machine: the agent loop, tools, approvals, memory, and extension surface. Here's what each part does and why open source matters for all of them.",
+    alternates: { canonical: "/what-is-an-ai-harness" },
 };
 
 const faqJsonLd = {
@@ -138,9 +139,10 @@ export default function AiHarnessPage() {
                     Without persistence, every session starts from zero and the agent
                     re-learns your codebase daily. A harness with memory carries context
                     across sessions — and the interesting frontier is harnesses that{" "}
-                    <em>learn</em>: G-Rump records every run&rsquo;s outcome, distills
-                    lessons from failures and corrections, and proposes new skills as
-                    diffs you approve (<A href="/docs/learning-loop">the learning loop</A>).
+                    <em>learn</em>. G-Rump is running that experiment in the open: it
+                    records every run&rsquo;s outcome, distills lessons from failures
+                    and corrections, and proposes new skills as diffs you approve
+                    (<A href="/docs/learning-loop">the learning loop</A>).
                 </P>
                 <P>
                     <strong className="font-semibold text-[var(--text-1)]">5. The extension surface.</strong>{" "}

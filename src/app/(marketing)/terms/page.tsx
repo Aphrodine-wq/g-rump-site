@@ -4,6 +4,7 @@ export const metadata: Metadata = {
     title: "Terms",
     description:
         "Terms of use for G-Rump: MIT-licensed software provided as-is. You are responsible for what you run and for your API provider costs.",
+    alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

@@ -72,7 +72,7 @@ export function AppWindowMock({ screenshotSrc }: { screenshotSrc?: string }) {
                             ["read_file", "Sources/GRump/Intelligence/Learning/LessonStore.swift"],
                             ["grep_search", '"confidence" — 14 matches'],
                             ["write_file", "LessonStore.swift · +18 −2"],
-                            ["system_run", "swift test — 1,564 passed"],
+                            ["system_run", "swift test — 1,581 passed"],
                         ].map(([tool, detail]) => (
                             <div
                                 key={tool}

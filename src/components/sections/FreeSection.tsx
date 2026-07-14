@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { LICENSE_URL } from "@/lib/facts";
 
@@ -7,8 +8,8 @@ const COMPARISON = {
         ["Runs as", "native macOS app", "terminal CLI", "terminal CLI", "web UI + sandbox"],
         ["Written in", "Swift", "TypeScript", "Python", "Python"],
         ["License", "MIT", "proprietary", "Apache-2.0", "MIT"],
-        ["BYOK multi-provider", "4 providers", "Anthropic-centric", "yes", "yes"],
-        ["Cross-session memory built in", "yes", "project files", "no", "no"],
+        ["BYOK multi-provider", "5 providers, incl. local Ollama", "Anthropic-centric", "yes", "yes"],
+        ["Cross-session memory built in", "yes — experimental", "project files", "no", "no"],
     ],
 };
 
@@ -33,7 +34,8 @@ export function FreeSection() {
                                 MIT-licensed
                             </a>{" "}
                             open source. You bring an API key from Anthropic, OpenAI,
-                            Google, or OpenRouter and pay your provider directly for
+                            Google, or OpenRouter — or run local models through Ollama
+                            with no key at all — and pay your provider directly for
                             exactly what you use.
                         </p>
                     </Reveal>
@@ -91,7 +93,19 @@ export function FreeSection() {
                         <p className="mt-4 text-sm text-[var(--text-3)]">
                             All four are good tools. G-Rump&rsquo;s bet is that a coding
                             agent should be a first-class Mac citizen with a memory, not a
-                            process in a terminal.
+                            process in a terminal. Full, honest comparisons:{" "}
+                            <Link href="/vs/claude-code" className="text-[var(--accent)]">
+                                vs Claude Code
+                            </Link>
+                            ,{" "}
+                            <Link href="/vs/aider" className="text-[var(--accent)]">
+                                vs Aider
+                            </Link>
+                            ,{" "}
+                            <Link href="/vs/openhands" className="text-[var(--accent)]">
+                                vs OpenHands
+                            </Link>
+                            .
                         </p>
                     </Reveal>
                 </div>

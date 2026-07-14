@@ -8,7 +8,7 @@ const STEPS = [
         label: "Act",
         component: "the agent loop",
         heading: "The agent does the work.",
-        body: "A run is real work — reading files, editing code, running builds and tests through 153 tools. Every run leaves a trail: which tools ran, what failed, where the agent had to pivot.",
+        body: "A run is the agent attempting real work — reading files, editing code, kicking off builds and tests through 160 tools. Every run leaves a trail: which tools ran, what failed, where the agent had to pivot.",
     },
     {
         label: "Observe",
@@ -59,9 +59,9 @@ export function LearningLoopSection() {
     return (
         <section className="border-y border-[var(--hairline)] bg-[var(--bg-raised)]">
             <div className="mx-auto max-w-[1120px] px-6 py-24">
-                <p className="eyebrow">Recursive self-learning</p>
+                <p className="eyebrow">Self-learning loop · experimental</p>
                 <h2 className="text-h2 mt-4 max-w-[22ch] text-[var(--text-1)]">
-                    Most agents forget every session. This one doesn&rsquo;t.
+                    Most agents forget every session. This one is learning not to.
                 </h2>
 
                 <div className="mt-16 grid gap-12 lg:grid-cols-2">

@@ -9,7 +9,7 @@ export function DownloadCTASection() {
                 <Reveal>
                     <p className="eyebrow">Get started</p>
                     <h2 className="text-h2 mt-4 max-w-[18ch] text-[var(--text-1)]">
-                        Five minutes from download to first task.
+                        Download, add a key, start a run.
                     </h2>
                     <p className="mt-4 max-w-[46ch] text-[var(--text-2)]">
                         Or clone it and read every line before you run it — that&rsquo;s

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: "Security",
     description:
         "G-Rump executes LLM-directed shell commands, so the security model is the product: exec approvals, a fail-closed Conscience gate, protected writes, an opt-in daemon, and Keychain-only keys.",
+    alternates: { canonical: "/security" },
 };
 
 export default function SecurityPage() {

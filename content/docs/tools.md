@@ -1,10 +1,10 @@
 ---
 title: "Tools"
-description: "G-Rump provides 153 tools the AI agent can invoke during conversations."
+description: "G-Rump provides 160 tools the AI agent can invoke during conversations."
 source: "docs/ai-agent/tools.md"
 owned: app
 ---
-G-Rump provides 153 tools the AI agent can invoke during conversations.
+G-Rump provides 160 tools the AI agent can invoke during conversations.
 
 ## Tool Categories
 

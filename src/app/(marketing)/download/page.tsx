@@ -9,6 +9,7 @@ import download from "@/data/download.json";
 export const metadata: Metadata = {
     title: "Download",
     description: `Download G-Rump ${download.version} for macOS — the free, open-source AI harness. Direct download, SHA-256 checksum, and build-from-source instructions.`,
+    alternates: { canonical: "/download" },
 };
 
 const SITE_URL = "https://www.g-rump.com";

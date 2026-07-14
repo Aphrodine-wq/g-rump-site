@@ -17,7 +17,7 @@ const ITEMS = [
     {
         stat: "⌘R",
         unit: "build & run",
-        body: "xcodebuild or SPM, straight to a booted simulator with live app logs.",
+        body: "xcodebuild or SPM to a booted simulator with live app logs. New in 2.1 — expect rough edges.",
         offset: "lg:translate-y-1",
     },
     {
