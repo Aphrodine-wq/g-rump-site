@@ -91,6 +91,12 @@ export function Footer() {
                             rel="noopener"
                             className="transition-colors duration-150 hover:text-[var(--text-1)]"
                         >
+                            <svg viewBox="0 0 100 100" aria-hidden="true" className="mr-1 inline-block h-[12px] w-[12px] align-[-1px]">
+                                <rect x="8" y="18" width="66" height="16" fill="currentColor" />
+                                <rect x="8" y="42" width="84" height="16" fill="currentColor" />
+                                <rect x="8" y="66" width="48" height="16" fill="currentColor" />
+                                <rect x="64" y="66" width="16" height="16" fill="#2563EB" />
+                            </svg>
                             Walt Builds
                         </a>
                         .
